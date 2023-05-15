@@ -1,0 +1,38 @@
+@import "typography";
+
+$map: map-merge((), $typography);
+$breakpoints: (
+  // sm: 576px,
+  // md: 768px,
+  // lg: 992px,
+  // xl: 1200px,
+  // xxl: 1400px 
+);
+
+@each $key in map-keys($map) {
+  $nestedMap: map-get($map, $key);
+  @if map-get($nestedMap, responsive) {
+    @each $propertyValue in map-get($nestedMap, values) {
+      .#{map-get($nestedMap, class)}-#{$propertyValue} {
+        #{map-get($nestedMap, property)}: $propertyValue;
+      }
+    }
+  }
+}
+
+@each $name, $value in $breakpoints {
+  @media (min-width: $value) {
+    @each $key in map-keys($map) {
+      $nestedMap: map-get($map, $key);
+      @if map-get($nestedMap, responsive) {
+        @each $propertyValue in map-get($nestedMap, values) {
+          .#{map-get($nestedMap, class)}-#{$name}-#{$propertyValue} {
+            #{map-get($nestedMap, property)}: $propertyValue;
+          }
+        }
+      }
+    }
+  }
+}
+
+

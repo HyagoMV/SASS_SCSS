@@ -1,0 +1,95 @@
+// $global:(initial inherit unset);
+
+$typography: (
+  color: (
+    responsive: true,
+    property: color,
+    class: font,
+    values: ()
+    // values: (lightsalmon darksalmon salmon lightcoral indianred red crimson firebrick darkred pink pink lightpink hotpink deeppink palevioletred mediumvioletred orange gold orange darkorange lightsalmon coral tomato orangered yellow lightyellow lemonchiffon lightgoldenrodyellow yellow papayawhip moccasin peachpuff palegoldenrod khaki darkkhaki green greenyellow chartreuse lawngreen lime palegreen lightgreen springgreen mediumspringgreen limegreen mediumseagreen seagreen forestgreen green darkgreen yellowgreen olivedrab olive darkolivegreen mediumaquamarine darkseagreen lightseagreen darkcyan teal blue lightcyan aqua aquamarine paleturquoise turquoise mediumturquoise darkturquoise cadetblue steelblue lightsteelblue powderblue lightblue skyblue lightskyblue deepskyblue dodgerblue cornflowerblue mediumslateblue royalblue blue mediumblue darkblue navy midnightblue brown cornsilk blanchedalmond bisque navajowhite wheat burlywood tan goldenrod darkgoldenrod rosybrown sandybrown peru chocolate sienna saddlebrown brown maroon purple lavender thistle plum violet orchid fuchsia mediumorchid mediumpurple rebeccapurple blueviolet darkviolet darkorchid darkmagenta purple indigo mediumslateblue slateblue darkslateblue white white snow floralwhite ivory honeydew mintcream azure aliceblue ghostwhite whitesmoke beige seashell oldlace antiquewhite linen lavenderblush mistyrose gray gainsboro lightgray silver darkgray gray dimgray lightslategray slategray darkslategray black)
+  ),
+  font-family: (
+    responsive: true,
+    property: font-family,
+    class: font,
+    values: (serif sans-serif monospace cursive fantasy system-ui ui-serif ui-sans-serif ui-monospace ui-rounded emoji math fangsong)
+  ),
+  font-size: (
+    responsive: true,
+    property: font-size,
+    class: font,
+    values: (xx-small x-small small medium large x-large xx-large xxx-large smaller larger)
+  ),
+  font-style: (
+    responsive: true,
+    property: font-style,
+    class: font,
+    values: (normal italic oblique initial inherit)
+  ),
+  font-variant: (
+    responsive: true,
+    property: font-variant,
+    class: font,
+    values: (normal small-caps initial inherit)
+  ),
+  font-weight: (
+    responsive: true,
+    property: font-weight,
+    class: font,
+    values: (normal bold bolder lighter number initial inherit)
+  ),
+  letter-spacing: (
+    responsive: true,
+    property: letter-spacing,
+    class: letter,
+    values: (normal /*length*/ initial inherit)
+  ),
+  line-height: (
+    responsive: true,
+    property: line-height,
+    class: line,
+    values: (normal /*number length*/ initial inherit)
+  ),
+  text-align: (
+    responsive: true,
+    property: text-align,
+    class: text,
+    values: (left right center justify initial inherit)
+  ),
+  text-decoration-color: (
+    responsive: true,
+    property: text-decoration-color,
+    class: text-decoration,
+    values: (/*color*/ initial inherit)
+  ),
+  text-decoration-line: (
+    responsive: true,
+    property: text-decoration-line,
+    class: text-decoration,
+    values: (none underline overline line-through initial inherit)
+  ),
+  text-decoration-style: (
+    responsive: true,
+    property: text-decoration-style,
+    class: text-decoration,
+    values: (solid double dotted dashed wavy initial inherit)
+  ),
+  word-break: (
+    responsive: true,
+    property: word-space,
+    class: word,
+    values: (normal nowrap pre pre-wrap pre-line break-spaces) 
+  ),
+  word-break: (
+    responsive: true,
+    property: word-break,
+    class: word,
+    values: (normal break-all keep-all) 
+  ),
+  word-spacing: (
+    responsive: true,
+    property: word-spacing,
+    class: word,
+    values: (normal) 
+  )
+);
